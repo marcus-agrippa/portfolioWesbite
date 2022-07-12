@@ -1,0 +1,267 @@
+@import 'variables';
+@import 'utilities';
+@import 'responsive';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: $work-bg-color;
+  color: $light-font-color;
+  line-height: 1.4;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+// Nav
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(0,0,0,0.4);
+
+  ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      margin: 0 1rem;
+      padding: 1rem;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #f4f4f4;
+        font-weight: 700;
+
+
+        &:hover {
+          color: $highlight-font;
+        }
+      }
+    }
+  }
+}
+
+// Page Sections
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+
+  h1 {
+    font-size: 3rem;
+    margin: 1.5rem 0;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+// Home Section
+#home {
+  background-color: $home-bg-color;
+  i {
+    margin: 4rem;
+    color: #f76c6c;
+  }
+  p {
+    width: 800px;
+    span {
+      color: #f76c6c;
+    }
+  }
+}
+
+// About Section
+#about {
+  background-color: $about-bg-color;
+  color: #333;
+  
+  & i {
+    margin: 1rem 0;
+    color: #0a66c2;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+// Skill Section
+#skills {
+  background-color: $skills-bg-color;
+  h2 {
+    font-size: 3rem;
+    margin: 2rem 0;
+  }
+
+  p {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Container for skill bars */
+#skill-bars {
+  width: 900px;
+ 
+  p {
+    margin: 1.3rem 0;
+  }
+}
+.container-skill {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.skills {
+  text-align: right; 
+  padding-top: 5px; 
+  padding-bottom: 5px; 
+  padding-right: 10px;
+  color: $light-font-color; 
+  
+}
+
+.html {width: 90%; background-color: #333;} 
+.css {width: 90%; background-color: #1e3d59; } 
+.js {width: 90%; background-color: #ffc13b; } 
+.react {width: 60%; background-color: #808080;}
+
+#myskills {
+  width: 0;
+}
+
+.runAnimation {
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes slidein1 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 75%;
+  }
+}
+
+@keyframes slidein2 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 60%;
+  }
+}
+
+// Work Section
+#work div i {
+  margin: 3rem 3rem;
+  color: #fff;
+  &:hover {
+    color: $highlight-font;
+    cursor: pointer;
+    transform: scale(1.1);
+  };
+}
+
+// Contact Section
+#contact {
+  background-color: $contact-bg-color;
+  color: $dark-font-color;
+}
+
+form {
+  width: 100%;
+  & input, textarea {
+    font-family: inherit;
+    margin: 1.7rem 0;
+    padding: 13px 8px;
+    border: none;
+    background-color: #f5f0e1;
+    text-align: center;
+    color: $dark-font-color;
+    width: 325px;
+    border-radius: 5px;
+
+    &:focus {
+      border: 2px solid $dark-font-color;
+    }
+    
+    &::placeholder {
+      color: $dark-font-color;
+      font-weight: 500;
+    }
+  }
+
+  button {
+    width: 100%;
+    margin: 2rem 0;
+    background-color: $dark-font-color;
+    border: none;
+    padding: 15px 10px;
+    color: #f4f4f4;
+    border-radius: 5px;
+
+    &:hover {
+      opacity: 0.85;
+      cursor: pointer;
+    }
+
+    &:active {
+      transform: scale(0.96);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,108 @@
+// Mobile 
+@media (max-width: 768px) {
+  #navbar {
+    ul li {
+      padding: 0 0.3rem;
+      margin: 0 0.3rem;
+      font-size: 0.9rem;
+    }
+  }
+
+  section {
+    min-height: 100vh;
+  }
+
+  #home {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      max-width: 300px;
+      font-size: 1.2rem;
+      span {
+        color: #f76c6c;
+      }
+    }
+  }
+
+  #about {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    p {
+      max-width: 350px;
+      font-size: 1rem;
+    }
+
+    .skills {
+      text-align: right; /* Right-align text */
+      padding-top: 4px; /* Add top padding */
+      padding-right: 4px;
+      padding-bottom: 4px; /* Add bottom padding */
+    }
+    
+  }
+
+  #skills {
+
+    #skill-bars {
+      width: 300px;
+      margin: 0;
+    }
+
+    .skills {
+      text-align: right; /* Right-align text */
+      padding-top: 5px; /* Add top padding */
+      padding-bottom: 5px; /* Add bottom padding */
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin: 1rem;
+    }
+
+    p {
+      max-width: 350px;
+      font-size: 1rem;
+    }
+
+  }
+  
+
+  #work {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      max-width: 350px;
+      font-size: 1rem;
+    }
+  }
+
+  #contact {
+    h1 {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    p {
+      max-width: 350px;
+      font-size: 1rem;
+    }
+
+    input {
+      margin: 1rem 0;
+    }
+
+    button {
+      margin: 1rem 0;
+    }
+  }
+}

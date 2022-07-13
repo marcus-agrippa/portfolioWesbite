@@ -41,7 +41,6 @@ function sliderNumber() {
         i = 0;
       } else {
         width++;
-        console.log(width)
         sliderNum1.style.width = width + "%";
         sliderNum1.innerHTML = width + "%";
         sliderNum2.style.width = width + "%";

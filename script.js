@@ -29,7 +29,6 @@ function sliderNumber() {
   const sliderNum1 = document.querySelector('.html')
   const sliderNum2 = document.querySelector('.css')
   const sliderNum3 = document.querySelector('.js')
-  const sliderNum4 = document.querySelector('.react')
   sliderNum1.classList.add('runAnimation')
   sliderNum2.classList.add('runAnimation')
   sliderNum3.classList.add('runAnimation')
@@ -49,8 +48,6 @@ function sliderNumber() {
         sliderNum2.innerHTML = width + "%";
         sliderNum3.style.width = width + "%";
         sliderNum3.innerHTML = width + "%";
-        sliderNum4.style.width = width + "%";
-        sliderNum4.innerHTML = width + "%";
       }
 }
 }

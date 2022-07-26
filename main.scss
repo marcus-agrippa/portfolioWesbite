@@ -166,6 +166,11 @@ section {
   animation-name: slidein;
 }
 
+.recent-project {
+  text-decoration: none;
+  padding: 10px;
+}
+
 @keyframes slidein {
   from {
     width: 0%;
